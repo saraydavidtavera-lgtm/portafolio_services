@@ -1,0 +1,33 @@
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, lfr);
+    grid-template-rows: 5px;
+    gap: 10px;
+    padding: 8px;
+    padding-right: 5px;
+    border-radius: 5px;
+    width: 5%;
+    border-style: 1px;
+
+}
+article{
+    border: 3px solid #222 ;
+
+}
+#primer{
+    grid-column: span 0.1;
+    grid-row: span 2;
+}
+@keyframes aparecer-suave {
+    from{
+        opacity: 0;
+    
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*elementos que aparecen suave*/
+#imagencollage{
+    animation: aparecer-suave 1.5s ease-in-out;
+}

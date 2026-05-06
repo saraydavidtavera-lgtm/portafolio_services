@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+}
+/*
+Encabezado
+
+*/
+header{
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+header h1{
+    margin-bottom: 10px;
+
+}
+/*TARJETAS*/
+#contenedor-equipo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /*opcional*/
+    justify-content: center ; /*CENTRA HORIZONTAL*/
+    gap: 20px; /*espaciado entre tarjetas*/
+    padding: 40px;
+ }
+.miembro{
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+ }
+ @keyframes aparecer-header{
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+ body{
+    animation: aparecer-header 1s ease-out;
+ }
+ @keyframes entrada-tarjetas{
+    from{
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+ }
+ .miembro{
+    animation: entrada-tarjeta 0.8s ease-out; /*cada tarjeta aparece*/
+    transition: transform 0.4s ease, box-shadow 0.4s ease;/*suavizar hover*/
+ }
+ .miembro:hover{
+    cursor: pointer; 
+    transform: translateY(-12px);
+    box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.2); /*sombra fuerte*/
+ }
+ @keyframes flotar{
+    0%{
+    transform: translateY(0);
+    }
+    50%{ transform: translateY(-8px);
+
+    }
+    100%{ 
+transform: translateY(0);
+    }
+ }
+ .miembro{
+    animation: flotar 2s infinite;
+ }

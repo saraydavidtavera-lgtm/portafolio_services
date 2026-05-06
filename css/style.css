@@ -1,0 +1,465 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+*{
+padding: 0; /* elimina espacio interno por defecto*/
+margin: 0; /* elimina espacio externo por defecto*/
+box-sizing: border-box; /*Incluye padding y border dentro del elemento*/
+
+
+}
+img-personal {
+    max-width: 5px;
+    max-height: 5px;
+}
+
+.tipografia{
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+body{
+
+    font-family:Arial, Helvetica, sans-serif; /* define la fuente principal*/
+    background-color: #e4c3e1; /*RBG: RED, GREEN BLUE (se usan con los hexamdecimales
+    0123456789ABCDEFG HEXADECIMAL*/
+    color: #333;
+}
+
+header{
+    background-color: #76a0e0;
+    color: beige;
+    padding: 25px;
+    text-align: center;
+}
+
+nav ul{
+list-style: none; /*elimina viñetas por defecto*/
+margin: 10px;
+}
+
+nav ul li{
+  display: inline; /* de forma vertical a horizontal*/
+  margin: 0 15px;
+
+}
+.a-encabezado{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.a-encabezado:hover{
+    color: whitesmoke ;
+    background-color: purple;
+}
+section{
+   background-color: whitesmoke;
+   width: 85%;
+   margin: 20px auto;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.888);
+}
+
+#sobre-mi div{
+    display: inline-block; /* coloca las columnas horizontales*/
+     width: 45%; /*Ancho de las columnas*/
+     vertical-align: center;
+
+}
+#sobre-mi div img{
+    border-radius: 50%;
+}
+#sobre-mi-texto{
+    text-align: center;
+}
+#sobre-mi-img{
+    text-align: center;
+}
+#skills {
+   padding: 40px;
+   background-color: #e4c3e1;
+   text-align: center; /*vertical align */
+}
+#skills h2{
+  font-size: 35px;
+  color: black;
+  margin-bottom: 30px;
+}
+#blandas, #tecnicas{ 
+    background-color: whitesmoke;/*Fondo en blanco*/
+    border: 2px solid red; /* borde sea gris*/
+    border-radius: 10px;/*bordes redondos*/
+    padding: 20px; /*espacio interno de los elementos*/
+    margin: 20px; /* separacion externa*/
+    width: 35%; /* ancho de la caja*/
+    display: inline-block; /* coloca lado a lado*/
+    vertical-align: top; /* alinea arriba*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);/**/
+    text-align: center; /* texto a la izquierda*/
+}
+#blandas ul, 
+#tecnicas ol{
+ padding-left: 25px;/*Sangria*/
+}
+#blandas li, 
+#tecnicas li{
+margin-bottom: 10px;
+font-size: 18px;
+}
+/*REPOSITORIOS*/
+#repositorios{
+    padding: 40px;
+    background-color: whitesmoke;
+    text-align: center;
+
+}
+#repositorios table{
+    margin: auto;/**/
+    width: 90%;/*ancho de la tabla*/
+    border-collapse: collapse; /*une los bordes*/
+    background-color: whitesmoke;
+}
+#repositorios th{
+    background-color: peru;
+    color: white;
+    padding: 15px;
+
+}
+#repositorios td{
+padding: 12px;
+border: 1px solid blue;
+}
+#repositorios tr:nth-child(even){
+    background-color: gray;
+
+}
+#repositorios a{
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+}
+#repositorios a:hover{
+    text-decoration: underline;
+}
+#proyectos{
+    padding: 40px;
+    background-color: bisque;
+    margin-bottom: 30px;
+}
+#proyectos article{
+     background-color: white; /*color de fondo*/
+     border: 2px solid pink; /*color del borde*/
+     border-radius: 10px;/* borde redondo al contenedor*/
+     width: 20%; /* reducir*/
+     display: inline-block;
+     vertical-align: top;
+     margin: 10px;
+     padding: 20px;
+     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+.img-personalizada{
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+#proyectos h3{
+    color: brown;
+    margin-bottom: 15px;
+
+}
+#proyectos p{
+    font-size: 16px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+
+}
+#proyectos button{
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#proyectos button:hover{
+    background-color: darkorchid;
+    cursor: pointer; /*cursor de mano*/
+
+}
+#contactos{
+
+    padding: 40px;
+    background-color: white;
+}
+#contactos h2{
+    text-align: center;
+    font-size: 35px;
+    color: brown;
+    margin-bottom: 30px;
+}
+#contactos form{
+     width: 70%;
+     background-color: rgb(190, 179, 189);
+     padding: 25px;
+     border:  2px solid #ddd;
+     border-radius: 10px;
+     margin: auto;
+}
+#contactos h3
+#contactos label{
+    font-weight: bold;
+    color: #333;
+}
+#contactos input[type="text"]
+#contactos input[type="number"]
+#contactos input[type="email"]
+#contactos input[type="date"]
+#contactos input[type="datetime-local"]
+#contactos input[type="number"]
+#contactos input[type="file"]{
+    width: 100%;
+    font-family: "Imperial Script", cursive;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contactos input[type="submit"]{
+    width: 100%;
+    padding: 12px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#contactos input[type="submit"]:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+/*KeyFrames  dan dinamismo a la pg y crea distintas animaciones a voluntad*/
+@keyframes aparecer-suave {
+    from{
+        opacity: 0;
+    
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*elementos que aparecen suave*/
+header{
+    animation: aparecer-suave 1.5s ease-in-out; /* Aparece gradualmente*/
+
+}
+#repositorios table{
+animation: aparecer-suave 2.5s ease-in-out;
+}
+#contactos form{
+animation: aparecer-suave 2.5s ease-in-out;
+}
+@keyframes deslizar-arriba {
+    from{
+        transform: translateY(50px); /*Baje 50px*/
+        opacity: 1;
+    }
+}
+#blandas{
+    animation: deslizar-arriba 1s ease-in-out;
+}
+#proyectos{
+    animation: deslizar-arriba 1s ease-in-out;
+}
+@keyframes entrada-izquierda{
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#sobre-mi-texto{
+    animation: entrada-izquierda 1.2 ease-out;
+
+
+}
+@keyframes entrada-derecha{
+    from {
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#sobre-mi-img{
+    animation: entrada-derecha 1.2s ease-out;
+}
+@keyframes latido-boton{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+button:hover{
+    animation: latido-boton 0.6s infinite;
+
+}
+@keyframes rotas-suave{
+    from{
+        transform: rotate(0deg); /* sin giro*/
+    }
+    to{
+        transform: rotate(10deg); /*con giro leve*/
+    }
+}
+#img-personal:hover{
+    animation: rotar-suave 0.4s forwards;
+}
+/*TRANSITTIONS EXTRAS NO SON KEYFRAMES*/
+#proyectos article{
+    transition: transform 0.4s ease; /*suavizar el movimiento*/
+
+}
+#proyectos article:hover{
+    transform: translateY(-10px);
+}
+.tipografia:hover{
+    color: brown;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+/*Responsive:
+Adaptar las paginas a las diferentes pantallas existentes
+-Telefonos
+-Tablets
+-Computadores
+*/
+@media screen and (max-width: 768px){ 
+    /*Header / NAV
+    Convertir menú horizontal a vertical
+    */
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+}
+/*
+Controlar section general 
+hacer que las secciones sean más anchas para aprovechar la pantalla 
+*/
+section{
+    width: 95%;
+    padding: 15px;
+}
+#sobre-mi div{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px ;
+}
+#blandas
+#tecnicas{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+}
+#repositorios{
+    overflow: 100%;
+}
+#repositorios table{
+    width: 100%;
+    min-width: 700px;
+}
+#proyectos article{
+    width: 45%;
+    margin: 10px 2%;
+
+}
+#contactos form{
+    width: 90%;
+
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size: 14px;
+
+    }
+    header{
+        padding: 15px;
+    }
+    .a-encabezado{
+        display: block;
+        padding: 10px;
+    }
+    section{
+        width: 100%;
+        margin: 20px;
+        border-radius: 0;
+    }
+    #sobre-mi{
+        text-align: center;
+    }
+    #sobre-mi div{
+        width: 100%;
+
+    } #img-personal{
+        max-width: 200px;
+    }
+    #skills h2, 
+    #proyectos h2,
+    #contactos h2{
+        font-size: 26px;
+    }
+    #blandas,
+    #tecnicas{
+        width: 100%;
+        margin: 15px 0;
+        padding: 15px;
+    }
+    #proyectos article{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .img-personalizada{
+        width: 120px;
+    }
+    #repositorios table{
+        font-size: 12px;
+    }
+    #repositorios th, 
+    #repositorios td{
+        padding: 8px;
+    }
+    #contactos form{
+    width: 100%;
+    padding: 15px;
+    }
+    #contactos input[type="text"]
+     #contactos input[type="number"]
+      #contactos input[type="email"]
+       #contactos input[type="date"]
+        #contactos input[type="datetime"]
+         #contactos input[type="file"]{
+         font-size: 14px;
+         }
+         #contactos input[type="submit"]{
+            font-size: 16px;
+         }
+         button{
+            width: 100px;
+            padding: 12px;
+         }
+}
