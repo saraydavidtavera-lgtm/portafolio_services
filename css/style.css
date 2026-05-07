@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
 
 *{
 padding: 0; /* elimina espacio interno por defecto*/
@@ -11,16 +12,26 @@ box-sizing: border-box; /*Incluye padding y border dentro del elemento*/
 #proyecto-1 img {
     max-width: 500px;
     max-height: 250px;
+    animation: aparecer-suave 3s ease-in-out;
 }
 
 #proyecto-2 img {
     max-width: 500px;
     max-height: 250px;
+    animation: aparecer-suave 3s ease-in-out;
+    border-style: double;
+    padding-right: 2px ;
+    border: 20; 
+    
 }
 
 #proyecto-3 img {
     max-width: 500px;
     max-height: 250px;
+    animation: aparecer-suave 3s ease-in-out;
+    border-style: double;
+    padding-right: 2px ;
+    border: 20; 
 }
 .tipografia{
   font-family: "Imperial Script", cursive;
@@ -28,6 +39,7 @@ box-sizing: border-box; /*Incluye padding y border dentro del elemento*/
   font-style: normal;
 
 }
+
 body{
 
     font-family:Arial, Helvetica, sans-serif; /* define la fuente principal*/
@@ -190,13 +202,13 @@ border: 1px solid blue;
 }
 #proyectos p{
     font-size: 16px;
-    color: black;
+    color: rgb(17, 16, 16);
     margin-bottom: 15px;
 
 }
 #proyectos button{
     padding: 10px;
-    background-color: rgb(122, 160, 226);
+    background-color: rgb(239, 142, 67);
     color: white;
     border: none;
     border-radius: 5px;
