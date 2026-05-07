@@ -201,7 +201,7 @@ border: 1px solid blue;
 }
 #contactos form{
      width: 70%;
-     background-color: rgb(232, 223, 141);
+     background-color: rgb(234, 195, 218);
      padding: 25px;
      border:  2px solid #ddd;
      border-radius: 10px;
@@ -230,7 +230,7 @@ border: 1px solid blue;
 #contactos input[type="submit"]{
     width: 100%;
     padding: 12px;
-    background-color: rgb(104, 198, 96);
+    background-color: rgb(123, 176, 118);
     color: white;
     border: none;
     border-radius: 5px;
