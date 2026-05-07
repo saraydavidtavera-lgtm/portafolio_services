@@ -28,7 +28,7 @@
       em
       vh
       ;*/
-      padding-right: 20px ; /*redondea el bordel del elemento*/
+      padding-right: 2px ; /*redondea el bordel del elemento*/
       border: 20; /* establece un borde personal personalizado*/
        
    }
@@ -53,13 +53,18 @@ section{
     <header>
       <nav>
     <ul>
-    <li><a class="a-encabezado" href="#sobre-mi"></a></li>
+    <a class="a-encabezado" href="#sobre-mi"></a>
+    <li>sobre mi</li>
      <li><a class="a-encabezado" href="#skills"></a></li>
+     <li>skills</li>
      <li><a class="a-encabezado" href="#repositorios"></a></li>
+     <li>repositorios</li>
      <li><a class="a-encabezado" href="#proyectos"></a></li>
+     <li>proyectos</li>
      <li><a class="a-encabezado" href="#contactos"></a></li>
-     <li><a class="a-encabezado" href="#team-developer"></a></li>
+     <li>contactos</li>
      <li><a class="a-encabezado" href="#collage"></a></li>
+     <li>collage</li>
    </ul>
    </nav>
 
@@ -78,19 +83,20 @@ section{
          Elemento: para controlar todos aquellos que comparten la misma semantica -->
    <section id="sobre-mi">
       <div id="sobre-mi-texto">
-        <h1 style="color: palevioletred;"><span class="tipografia">Saray Jiced David Ortega</span></h1>
-        <em>Estudiante</em><strong> Desarrollo de software</strong>
-      <p> Desarrolladora java backend en proceso y pausa de profesional en Lenguas Modernas
-      </p>
+        <strong><h1 style="color: rgb(246, 9, 96);"><span class="tipografia">Saray Jiced David Ortega</span></h1></strong>
+        <strong> Estudiante en Desarrollo de software</strong>
+      <em><p> Apasionada por el aprendizaje de herramientas que optimizen el diario vivir, con objetivos grandes a cumplir pausa de mi carrera favorita profesional en Lenguas Modernas</em></p>
       </div>
       <span class="style"></span> <!--Parrafo-->
       <br><p></p> <!--salto de linea más grande-->
       <!--la imagen puede ser local o por URL-->
       <br>
       <div id="sobre-mi-img">
-     <img  id="imagen-personal" src="/software imagen.jpg" alt="">
+     <img  id="imagen-personal" src="/me.jpeg" alt="">
      </div>
+     <a href="mi-cv.pdf" download="Mi_CV.pdf">
      <button> Descargar CV </button>
+     </a>
 
     <section id="skills">
       <h2>Skills</h2>
@@ -130,19 +136,19 @@ section{
          <tr>
             <td>1</td>
             <td>Drogueria</td>
-            <td>Proyecto</td>
+            <td>Una aplicación modular generada con Python para optimizar la gestión de una droguería con base a las ventas, proveedores, gestión y control del inventario para garantizar la productividad de una forma optima y controlada de los productos vendidos y a compra 💡</td>
             <td> <a href="https://github.com/saraydavidtavera-lgtm/Proyecto_drogueriaequipo"></a></td>
          </tr> 
            <tr>
-            <td>2l</td>
+            <td>2</td>
             <td>Herramientas</td>
-            <td>Proyecto</td>
+            <td>Una aplicación modular generada con Python para optimizar la gestión de herramientas ✨</td>
             <td> <a href="https://github.com/saraydavidtavera-lgtm/taller_githerramientas"></a></td>
          </tr> 
            <tr>
             <td>3</td>
-            <td>AromaCapus</td>
-            <td>Proyecto</td>
+            <td>AromaCampus</td>
+            <td>Una aplicación modular generada con Python para optimizar la gestión de una Coffee Shop 💡</td>
             <td> <a href="https://github.com/saraydavidtavera-lgtm/Examen_AromaCampus"></a></td>
          </tr> 
       </tbody>
@@ -152,20 +158,20 @@ section{
 
    <section id="proyectos">
 <article id="proyecto-1">
-   <img class="img-personalizada" src="/software imagen.jpg">
+   <img class="img-personalizadadrog" src="/img.doc.png">
+   <h3>Drogueria</h3>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore beatae eveniet, ipsa temporibus excepturi ad, suscipit quaerat cumque ab eius, est enim nisi quod animi odit dolores voluptatibus? Possimus, molestiae?</p>
+   <button>Ver Proyecto</button>
+</article>
+<article id="proyecto-2">
+   <img class="img-personalizadaherramientas" src="/img.herramientas.png">
    <h3>Herramientas</h3>
    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore beatae eveniet, ipsa temporibus excepturi ad, suscipit quaerat cumque ab eius, est enim nisi quod animi odit dolores voluptatibus? Possimus, molestiae?</p>
    <button>Ver Proyecto</button>
 </article>
-<article>
-   <img class="img-personalizada" src="/software imagen.jpg">
-   <h3>Herramientas</h3>
-   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore beatae eveniet, ipsa temporibus excepturi ad, suscipit quaerat cumque ab eius, est enim nisi quod animi odit dolores voluptatibus? Possimus, molestiae?</p>
-   <button>Ver Proyecto</button>
-</article>
-<article>
-   <img class="img-personalizada" src="/software imagen.jpg">
-   <h3>Herramientas</h3>
+<article id="proyecto-3">
+   <img class="img-personalizadacoffee" src="/img.coffee.png">
+   <h3>AromaCampus</h3>
    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore beatae eveniet, ipsa temporibus excepturi ad, suscipit quaerat cumque ab eius, est enim nisi quod animi odit dolores voluptatibus? Possimus, molestiae?</p>
    <button>Ver Proyecto</button>
 </article>
